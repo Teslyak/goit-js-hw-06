@@ -9,6 +9,6 @@ function onInputBlur() {
     refs.input.classList.remove('valid');
     refs.input.classList.remove('invalid'); 
     if (Number(refs.input.value.length) === Number(inputLength)) {
-        refs.input.classList.toggle('valid');  
-    } else refs.input.classList.toggle('invalid');
+        refs.input.classList.add('valid');  
+    } else refs.input.classList.add('invalid');
 } 

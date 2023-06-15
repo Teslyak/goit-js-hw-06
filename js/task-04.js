@@ -5,8 +5,8 @@ const refs = {
     spanCounterValue: document.querySelector('#value')
 };
 
-refs.btnDecrm.addEventListener('click',onButtonDecrement);
-refs.btnIncrm.addEventListener('click',onButtonIncrement);
+refs.btnDecrm.addEventListener('click' ,onButtonDecrement);
+refs.btnIncrm.addEventListener('click', onButtonIncrement);
 
 function onButtonDecrement() {
     counterValue -= 1;

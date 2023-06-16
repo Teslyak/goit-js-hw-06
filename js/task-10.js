@@ -11,12 +11,18 @@ const refs = {
   divBoxes: document.querySelector('#boxes')
 
 }
+refs.inputAmount.addEventListener('input', onInputAmount);
+refs.buttonCreate.addEventListener('click', onClickBtnCreate);
+refs.buttonDestroy.addEventListener('click', onClickBtnDestroy)
+function onInputAmount(event) {
+  const inputValue = event.currentTarget.value;
+  console.log(inputValue);
+};
 
-refs.inputAmount.addEventListener('submit', onInputAmount);
-
-function onInputAmount() {
+function onClickBtnCreate() {
   
 };
 
+function onClickBtnDestroy() {
 
-
+};

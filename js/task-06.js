@@ -5,10 +5,10 @@ const refs = {
 const inputLength = refs.input.getAttribute('data-length')
 refs.input.addEventListener('blur', onInputBlur);
 
-function onInputBlur() {
-    refs.input.classList.remove('valid');
-    refs.input.classList.remove('invalid'); 
-    if (Number(refs.input.value.length) === Number(inputLength)) {
-        refs.input.classList.add('valid');  
-    } else refs.input.classList.add('invalid');
+function onInputBlur(event) {
+    event.currentTarget.classList.remove('valid');
+    event.currentTarget.classList.remove('invalid'); 
+    if (Number(event.currentTarget.value.length) === Number(inputLength)) {
+        event.currentTarget.classList.add('valid');  
+    } else event.currentTarget.classList.add('invalid');
 } 

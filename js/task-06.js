@@ -8,7 +8,7 @@ refs.input.addEventListener('blur', onInputBlur);
 function onInputBlur(event) {
     event.currentTarget.classList.remove('valid');
     event.currentTarget.classList.remove('invalid'); 
-    if (Number(event.currentTarget.value.length) === Number(inputLength)) {
+    if (Number(event.currentTarget.value.trim().length) === Number(inputLength)) {
         event.currentTarget.classList.add('valid');  
     } else event.currentTarget.classList.add('invalid');
-} 
+} s

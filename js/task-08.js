@@ -13,10 +13,11 @@ function onSubmitForm(event) {
     if (!emailValue || !passwordValue) {
         alert('Будь ласка заповніть всі поля');
     };
-    const makeObjectFormData = {
+     const makeObjectFormData = {
         email: emailValue,
         password: passwordValue
-    };
+     };
+    console.log(makeObjectFormData);
     event.currentTarget.reset();
     
 };

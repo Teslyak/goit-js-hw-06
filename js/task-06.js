@@ -11,4 +11,4 @@ function onInputBlur(event) {
     if (Number(event.currentTarget.value.trim().length) === Number(inputLength)) {
         event.currentTarget.classList.add('valid');  
     } else event.currentTarget.classList.add('invalid');
-} s
+};
